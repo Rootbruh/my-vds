@@ -1,15 +1,15 @@
-# Credits By gettoVDS
+# Credits By M0RG0TH
 
-name: Cl by getto
+name: Cl by morgoth
 
 on: 
   workflow_dispatch:
     inputs:
       authcode:
-        description: 'CRD Kodunuzu Giriniz'
+        description: 'CRD Kodunuzu Giriniz.'
         required: true
       pincode:
-        description: '6 Haneli Pin Kodunuz'
+        description: '6 Haneli Pin Kodunuzu Giriniz.'
         required: true
   
 jobs:

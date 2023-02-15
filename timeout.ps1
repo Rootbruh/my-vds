@@ -1,4 +1,4 @@
-# Credits By gettoVDS
+# Credits By M0RG0TH
 $i = 99999
 do {
     Write-Host $i
