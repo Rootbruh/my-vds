@@ -1,0 +1,26 @@
+# Credits By gettoVDS
+
+name: Cl by getto
+
+on: 
+  workflow_dispatch:
+    inputs:
+      authcode:
+        description: 'CRD Kodunuzu Giriniz'
+        required: true
+      pincode:
+        description: '6 Haneli Pin Kodunuz'
+        required: true
+  
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Kurulum Başlatılıyor
+      run: ./main.ps1
+    - name: CRD Başlatılıyor
+      run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
+    - name: Aktif Tut
+      run: ./timeout.ps1
